@@ -1,4 +1,6 @@
-name: GitHub Classroom Workflow
+
+name: Set output
+run: echo "{name}={value}" >> $GITHUB_OUTPUT
 
 on: [push]
 
@@ -14,3 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: education/autograding@v1
+      
+
+name: Save state
+
+
+
